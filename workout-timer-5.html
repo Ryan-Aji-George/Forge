@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FORGE — Workout Timer</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=lrJYz2X-kWLAeQAx2m19KDOEzncw9YofBhJ8C4hQQs-wZrJ2LS9qljQz4xHnMbGdM3oT0VjJtZ5JJ-g2b7EYDEXt6LpcHQLR9h5ZAHNICQbkAGSig2xzQeIH9xS3HNG02SGLnkOzb-jVRBmaAy8sCoIwWi0wumytW3vxy8yb7XF8CwsPS9bcRN3xtk7HnypeZ8tqJECA7ZZJIiR_Haz5P5v5ITjCMaKSso3RWzBlqe30rHZNBoTmOGr65wuO_LQ6dbbQN_m9PA9Y1KrJODBQPnZXI085SDwhkHApCswC7pZavJ6wsFbKRNaDm_ubsCx1DNsm61nnVbo-4VSiWnMrez_jXOloT5x5F7_dtN08q4DP4NNsepIUoiFI8J6ejNr6tWLgtGnOTy68p2Rj7lZ_Ugi5ag4_m4gjRD_n8XW0KuB9TchAh1A8n_Cbz2-dbzWk-TIKRgtcDwy9vCxM6XExgVaJzUfKgCH1jrUgpLhjtm_tZWO0Xx84nAA8uQPNr1hMBZF6oEqHLN7d-kEmL6BrMf28y30rotn58g2yVY1CgKRo-akhUXNMeRkAfIgAsrFcmNyiSDozSCsVKE4qOCJ-jyJVvBb0yRqpFhu_Vi1KpKIF_2CdewpGokyMCdgtMYb38w15ph4At5APK-A-fByHmAIc1H9X9PN_wHjdeb7TtJXPKyT_LwrsFjt3q7y0tCPPEWKa0IR0Lvh-BGI9Krhso-iG94iri6xuWV8iACTL55-1RD192gLsoY6wWzf-dQkiYC8rvCTAILk0_-MlGT-vr4m26cEND-eXKJIk8e2rsaud3lcFmX1QRXPf6txn8YaZS0vw4oqC1QqEMhF0J39nqzv8dlYSivq1o_GrSIwYdNCQWKLnYG5hYBwP4XGCKdTyzDtPqchZRp2hL9-S5oOXJ399X8Nr6JMzAjYSPYjowRqal7lY28U_JUQQ39fa4FnlsyqnKT00FXkxF5R3toPfuzONTw6sPM2sT_oQJDpCOQyT_eMQ_FUga_j5-rLg9cutdlj9LRkGoVZnfcOICqzlAcvcnVEccO2c0ngcreIXYnTSLEz_aAktTCncv1kE5bjBCXI7v88ycEQIfcanJM5i0qFg3zRVe_BcO4sS0ZSsdfgQMdV-vDndbnct26iEzq3awYumXTRJFrTTkxoKQcOaLf8esmmSJdhieJsVQV8E-vp9o_EQgGtKvwSOkfBCjTWzvFBd62wb4ewrXn_rCWkiMheQmfrCIRtTmjFEWIH-O9ZNuanX_UMvhaRRJc7UmDE-hgE9JBWahR3r4W1v32LW5jLRmh2aGufKTcEjJPDBV3mVHXzf5-dIzwxn7IkZwoR8_WBegFm0DK0PWBf5j6KwEbrWWMfAvjJSo7YpIGhds8T4PM2jUr_NAUJPXsN7fYa_ypP47ofzCFRsPcKcQEMz-WaSl9nRvm-vudRP7vpm5i_g_9ND9xgpIQ3qWivqOGAz_2SSQk8eF7mAlO0Y5_U3IAsiFDXr6gdHVTaUxdAAKOs_RxJyQi6JGZ-XBtjUX6SW6Bxf-oXVeHR1lcHY1P0KUiYeb76yPjTh_6T3pzlTAWD5O_KIN878m4YHbMAr6cTT7QpR4jow5DqNaDQfHK9fBcE7nh_Kp58jOQJw6kMZXoXNMmGgL93OkV_FkPEJkfCoP7HFi_YW2nEUY70wzKxgiae6ervX1f48Gqjx3GQeqNksmHcQobGg_wAVOGgd4GsPpnmA-iUaWQDxOZaS-gtSFgXzzPSlAoircxZYaoXhvzIRxCP3-4MzoUJKVQFA8_ag3ZHj3yQBjowZUE3uiu9Bdw" nonce="44e441b304215d0d754411721ca62d06" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9tYWlsLWF0dGFjaG1lbnQuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2F0dGFjaG1lbnQvdS8wLz91aT0yJmlrPTU5ZDIxYTBlMjcmYXR0aWQ9MC4xJnBlcm1tc2dpZD1tc2ctYTpyNDI2MTMxOTExNDA3NzU2Nzc4MyZ0aD0xOWRkYzYyOGYxN2U1NDZiJnZpZXc9YXR0JmRpc3A9c2FmZSZyZWFsYXR0aWQ9MTlkZGM2MjdhYWMzYTk5N2U3YzImencmc2FkZGJhdD1BTkdqZEo4Y1BkQmNwWS11bDRVZDc0M21QOFQzQnNFT2dtalpzamtuZE9oQmRzd0pXSTkxeFRHZkR2azdocGZUei1CcWpTTW5QZWowdkFfcnFReDJEa0s1anhHQ1pYMmhhZ1RDVUNLdVVoWEhWOFBGUVlXcGd5cnZlek1xaWk5X2JpQTFLaVNnZFh6UWFqdVpkbWdqQXBqMjBmWDhncTRiZWU5b1dIdU1ETjFURlRBWFVwR3hfUF81YUxnYVRsOXg5WG1tTGkyYkJmUTR2WG9FeU1TalpRc3FnTG5xeHJBT0hvLW1QM1dfakk1UjFrVzJFS194eW1FU1FCZkoyeXUzaU1neUN2Nk5TbkxBSnlFV3NDbENBcUdMWWhMWU9rSXB1QW5SRXhwZUJoSUhuMmVIV0tuSHk1NWNZRmMtdzFLNGRLUkUzLUZ1cERPSWJDR0NKYmF4MUJKdnNpUXVCejJjSjB2OVpPNng2TXdHNFB4Z3d1TENkZ2V0RFNwYUh0VTVRbm5jbTBuRzQ1YVhNM0NYZ0VWcDVBV0tsVHhYM3dQdGMxYkt6V203MzFRQW9YVVI4UGkzZnV0UXJXRTk3VzNCemt1QldLYkFtU3dFQTVLZVNVSWNRZjdDQlhabkQ5VmJYR0ZVaVJXT09jSXdjUGRyZHFWTlc0QU1yWkJQWE1wUDBxX25HVi1QcHdyVGFZTUZGTWFwRTRTc2VweWFpNElzMHdTSmNCVUwtSy1YZG1wSm8yUUkzVXJjdHRhWDBQaHZRWFhqSzVkS1dfR29DYU4wd2FQdkF1aW1kd0N5RGR2QVFRR201MHZfTkRMeE1qOFpndnlBSWpaLXk5ZERPbnUza1EyNHVCdC1JNmM0X094dEl2empBb0xxbGloNmdRajFHNEVucXlFbl9SVkl1TFlab0J2eEtna2RNSXJLNkI0dnpzb2owb0MwdU5STlNWYV9KYXF4NFlacmF4dlZ3V3BtM0pnLUFQWHBVWV83ZVlRbzFPZFZadV9sRkg1VUtoRndMeWU5WkpRR0hDOTlOM3lsVl9aeE1ER0lpWVJIQ1F5VkQxQ2hoRGpQUE0zYlFiQ2pwMS1QZjZKaTVvY3VsTkt6M3U1VDdFMW1XbHEtd1g5MDYzd0w1VUdxY0VCNzZxcmkwcUc5anBWcWxwS3dGUHpaWHc5M0hYRGNkZFc0Y1Jpa3RDVTE5MkpZMEFGeV9OeUhUXzdOUVFRN0xCeG1DNVpydGZ2Nmd5RF96NWVNXzdwR3BtRWJ3UHhWdHhBQjRhZTBfSl9UVW5kQk5SSGdDaXczSjBTenpjQ1kwemZ0MWpESDhNNmNPd2pRZENWWndCTGtRSWxZQ3FvbGROY3RhcW81OE5oRnZBSkw3VGk3ZzgycE5GWWRnNGdFcGJYOVVJaWxhNUFsUHUzNzZCdy16S0o1QVpGbTl3RlhEZ3Jrdy1fUnBWemg3THFMT2pzMFBLcG4yTktBM3hYUWNPTkRjUXZsUm53MHJWS2FqQQ"/><style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#0a0a0f;--surface:#13131a;--surface2:#1a1a24;--surface3:#22222e;--accent:#c8ff2e;--accent-dim:#3a4a10;--red:#ff4060;--cyan:#2ef0ff;--text:#e8e8f0;--text2:#8888a0;--text3:#55556a;--radius:14px;--radius-sm:8px}
+html,body{height:100%;font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);overflow:hidden}
+body{display:flex}
+button{font-family:inherit}
+svg.icon{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+svg.icon.sm{width:16px;height:16px}
+svg.icon.lg{width:24px;height:24px}
+#setup{width:100%;height:100%;display:flex;flex-direction:row;overflow:hidden}
+#setup.hidden{display:none}
+.setup-left{flex:1;display:flex;flex-direction:column;padding:36px 44px;overflow-y:auto;gap:24px}
+.setup-right{width:340px;background:var(--surface);border-left:1px solid var(--surface3);display:flex;flex-direction:column;padding:36px 32px;gap:22px}
+.top-bar{display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:14px}
+.brand-icon{width:42px;height:42px;background:var(--accent);border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue';font-size:24px;color:var(--bg);line-height:1}
+.brand h1{font-family:'Bebas Neue';font-size:32px;letter-spacing:3px;color:var(--accent)}
+.top-actions{display:flex;gap:8px}
+.icon-btn{background:var(--surface2);border:1px solid var(--surface3);border-radius:var(--radius-sm);color:var(--text2);padding:8px 12px;cursor:pointer;display:flex;align-items:center;gap:7px;font-size:13px;font-weight:600;transition:all .15s;font-family:'DM Sans'}
+.icon-btn:hover{border-color:var(--accent);color:var(--accent)}
+.section-title{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--text2)}
+.exercise-list{display:flex;flex-direction:column;gap:12px;flex:1}
+.ex-card{background:var(--surface);border:1px solid var(--surface3);border-radius:var(--radius);padding:14px 18px;display:flex;flex-direction:column;gap:10px;transition:border-color .2s, opacity .2s, transform .2s}
+.ex-card:hover{border-color:var(--text3)}
+.ex-card.dragging{opacity:.4;transform:scale(.97)}
+.ex-card.drag-over-top{border-top:2px solid var(--accent)}
+.ex-card.drag-over-bottom{border-bottom:2px solid var(--accent)}
+.ex-top{display:flex;align-items:center;gap:14px}
+.ex-reorder{display:flex;align-items:center;gap:2px;flex-shrink:0}
+.ex-handle{color:var(--text3);display:flex;align-items:center;cursor:grab;padding:4px;border-radius:4px;transition:color .15s}
+.ex-handle:hover{color:var(--accent)}
+.ex-handle:active{cursor:grabbing}
+.ex-move{background:var(--surface2);border:1px solid var(--surface3);color:var(--text2);border-radius:6px;width:30px;height:30px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .15s;padding:0}
+.ex-move:hover{border-color:var(--accent);color:var(--accent)}
+.ex-move:disabled{opacity:.3;cursor:not-allowed}
+.ex-move-col{display:flex;flex-direction:column;gap:2px}
+.ex-num{font-family:'Bebas Neue';font-size:26px;color:var(--accent);width:32px;text-align:center;flex-shrink:0}
+.ex-fields{flex:1;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.ex-fields input[type=text]{background:transparent;border:none;border-bottom:1px solid var(--surface3);color:var(--text);font-size:15px;font-family:'DM Sans';padding:4px 0;width:170px;outline:none;transition:border-color .2s}
+.ex-fields input[type=text]:focus{border-color:var(--accent)}
+.mini-group{display:flex;align-items:center;gap:5px}
+.mini-group label{font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.8px;white-space:nowrap}
+.mini-group input[type=number]{width:50px;background:var(--surface2);border:1px solid var(--surface3);border-radius:var(--radius-sm);color:var(--text);font-family:'JetBrains Mono';font-size:13px;padding:5px 6px;text-align:center;outline:none}
+.mini-group input[type=number]:focus{border-color:var(--accent)}
+.ex-remove{background:none;border:none;color:var(--text3);cursor:pointer;padding:4px;border-radius:6px;transition:all .15s;display:flex;align-items:center;justify-content:center}
+.ex-remove:hover{color:var(--red);background:rgba(255,64,96,.1)}
+.ex-breaks{display:flex;gap:10px;padding-left:62px;flex-wrap:wrap}
+.break-group{display:flex;align-items:center;gap:5px;background:var(--surface2);border-radius:var(--radius-sm);padding:4px 10px}
+.break-group svg.icon{width:13px;height:13px;color:var(--cyan);flex-shrink:0}
+.break-group label{font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.6px;white-space:nowrap}
+.break-group input[type=number]{width:44px;background:var(--bg);border:1px solid var(--surface3);border-radius:4px;color:var(--cyan);font-family:'JetBrains Mono';font-size:12px;padding:3px 4px;text-align:center;outline:none}
+.break-group input[type=number]:focus{border-color:var(--cyan)}
+.add-btn{background:var(--surface2);border:1px dashed var(--surface3);border-radius:var(--radius);padding:14px;text-align:center;color:var(--text2);font-size:14px;cursor:pointer;transition:all .2s;font-family:'DM Sans';font-weight:600;display:flex;align-items:center;justify-content:center;gap:8px}
+.add-btn:hover{border-color:var(--accent);color:var(--accent)}
+.summary-block{background:var(--surface2);border-radius:var(--radius);padding:16px 20px;display:flex;flex-direction:column;gap:8px}
+.summary-row{display:flex;justify-content:space-between;font-size:13px}
+.summary-row .sr-label{color:var(--text3)}
+.summary-row .sr-value{font-family:'JetBrains Mono';color:var(--text)}
+.start-btn{margin-top:auto;background:var(--accent);color:var(--bg);border:none;border-radius:var(--radius);padding:18px;font-family:'Bebas Neue';font-size:26px;letter-spacing:3px;cursor:pointer;transition:transform .15s,filter .15s;display:flex;align-items:center;justify-content:center;gap:12px}
+.start-btn:hover{transform:scale(1.02);filter:brightness(1.1)}
+.start-btn:active{transform:scale(.98)}
+.start-btn svg.icon{stroke:var(--bg);width:24px;height:24px;stroke-width:2.5}
+input[type=file]{display:none}
+#timer{width:100%;height:100%;display:none;flex-direction:row;position:relative;overflow:hidden}
+#timer.active{display:flex}
+.timer-bg{position:absolute;inset:0;z-index:0}
+.timer-bg .glow{position:absolute;width:600px;height:600px;border-radius:50%;filter:blur(160px);opacity:.15;transition:background 1s}
+.timer-bg .glow.g1{top:-200px;left:-100px;background:var(--accent)}
+.timer-bg .glow.g2{bottom:-200px;right:-100px;background:var(--cyan)}
+.timer-main{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;z-index:1;padding:32px}
+.timer-top-bar{position:absolute;top:16px;right:20px;display:flex;gap:8px;z-index:5}
+.timer-top-bar .ctrl-btn-sm{background:var(--surface2);border:1px solid var(--surface3);border-radius:var(--radius-sm);color:var(--text2);width:40px;height:40px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .15s}
+.timer-top-bar .ctrl-btn-sm:hover{border-color:var(--accent);color:var(--accent)}
+.phase-label{font-family:'Bebas Neue';font-size:20px;letter-spacing:4px;text-transform:uppercase;margin-bottom:8px;transition:color .3s;display:flex;align-items:center;gap:10px}
+.phase-label svg.icon{width:22px;height:22px}
+.phase-label.exercise{color:var(--accent)}
+.phase-label.rest{color:var(--cyan)}
+.phase-label.getready{color:var(--red)}
+.current-name{font-family:'Bebas Neue';font-size:clamp(36px,6vw,72px);letter-spacing:2px;text-align:center;line-height:1.1;margin-bottom:20px;min-height:80px;display:flex;align-items:center;justify-content:center}
+.ring-container{position:relative;width:280px;height:280px;margin-bottom:24px}
+.ring-container svg.ring-svg{width:100%;height:100%;transform:rotate(-90deg)}
+.ring-bg{fill:none;stroke:var(--surface3);stroke-width:8}
+.ring-fg{fill:none;stroke-width:8;stroke-linecap:round;transition:stroke .4s}
+.ring-fg.exercise{stroke:var(--accent)}
+.ring-fg.rest{stroke:var(--cyan)}
+.ring-fg.getready{stroke:var(--red)}
+.ring-time{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.ring-time .big{font-family:'JetBrains Mono';font-size:64px;font-weight:700;line-height:1}
+.ring-time .sub{font-size:13px;color:var(--text2);margin-top:4px}
+.timer-controls{display:flex;gap:14px;margin-top:8px}
+.ctrl-btn{background:var(--surface2);border:1px solid var(--surface3);border-radius:12px;color:var(--text);width:56px;height:56px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .15s}
+.ctrl-btn:hover{border-color:var(--accent);color:var(--accent)}
+.ctrl-btn.stop:hover{border-color:var(--red);color:var(--red)}
+.timer-sidebar{width:360px;background:var(--surface);border-left:1px solid var(--surface3);display:flex;flex-direction:column;padding:28px 24px;gap:18px;position:relative;z-index:1;overflow-y:auto}
+.info-block{display:flex;flex-direction:column;gap:4px}
+.info-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--text3);display:flex;align-items:center;gap:6px}
+.info-label svg.icon{width:14px;height:14px}
+.info-value{font-family:'JetBrains Mono';font-size:18px;font-weight:500;color:var(--text)}
+.info-value.accent{color:var(--accent)}
+.info-value.cyan{color:var(--cyan)}
+.progress-bar-track{width:100%;height:8px;background:var(--surface3);border-radius:4px;overflow:hidden}
+.progress-bar-fill{height:100%;background:var(--accent);border-radius:4px;transition:width .4s}
+.upcoming-list{display:flex;flex-direction:column;gap:6px;flex:1;overflow-y:auto}
+.upcoming-item{display:flex;align-items:center;gap:10px;padding:8px 10px;background:var(--surface2);border-radius:var(--radius-sm);font-size:13px}
+.upcoming-item.current{border:1px solid var(--accent);background:var(--accent-dim)}
+.upcoming-item .ui-icon{flex-shrink:0;display:flex;align-items:center;color:var(--text3)}
+.upcoming-item.current .ui-icon{color:var(--accent)}
+.upcoming-item .ui-name{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.upcoming-item .ui-meta{font-family:'JetBrains Mono';font-size:11px;color:var(--text3)}
+#done-overlay{position:fixed;inset:0;background:var(--bg);z-index:100;display:none;flex-direction:column;align-items:center;justify-content:center;gap:20px}
+#done-overlay.active{display:flex}
+#done-overlay .done-icon{color:var(--accent);margin-bottom:8px}
+#done-overlay h2{font-family:'Bebas Neue';font-size:72px;color:var(--accent);letter-spacing:6px}
+#done-overlay p{font-size:18px;color:var(--text2)}
+#done-overlay button{margin-top:20px;background:var(--accent);color:var(--bg);border:none;border-radius:var(--radius);padding:16px 48px;font-family:'Bebas Neue';font-size:22px;letter-spacing:2px;cursor:pointer;display:flex;align-items:center;gap:10px}
+#done-overlay button svg.icon{stroke:var(--bg)}
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--surface2);border:1px solid var(--surface3);border-radius:var(--radius);padding:12px 24px;font-size:14px;font-weight:600;color:var(--accent);z-index:200;opacity:0;transition:all .3s;pointer-events:none;display:flex;align-items:center;gap:8px}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:var(--surface3);border-radius:3px}
+.sidebar-toggle{display:none;position:absolute;top:16px;left:20px;z-index:5;background:var(--surface2);border:1px solid var(--surface3);border-radius:var(--radius-sm);color:var(--text2);width:40px;height:40px;align-items:center;justify-content:center;cursor:pointer}
+.sidebar-toggle:hover{border-color:var(--accent);color:var(--accent)}
+@media(max-width:900px){#setup{flex-direction:column}.setup-left{padding:24px 20px}.setup-right{width:100%;border-left:none;border-top:1px solid var(--surface3);padding:24px 20px}.timer-sidebar{width:300px}}
+/* touch / small screens */
+@media(max-width:600px){
+  .setup-left{padding:18px 14px;gap:18px}
+  .brand h1{font-size:26px}.brand-icon{width:36px;height:36px;font-size:20px}
+  .top-actions{gap:6px}.icon-btn{padding:10px 12px}
+  /* 16px inputs prevent iOS auto-zoom; bigger tap targets */
+  .ex-fields input[type=text]{font-size:16px;width:100%;padding:8px 0}
+  .ex-fields{width:100%}
+  .mini-group input[type=number],.break-group input[type=number]{font-size:16px;width:60px;padding:8px 6px}
+  .ex-breaks{padding-left:0}
+  .ex-remove{width:36px;height:36px}
+  .add-btn{padding:16px}
+  .ctrl-btn{width:64px;height:64px}
+  .timer-controls{gap:18px}
+  .ring-container{width:240px;height:240px}
+  .ring-time .big{font-size:56px}
+  /* sidebar becomes a slide-over panel */
+  .sidebar-toggle{display:flex}
+  .timer-sidebar{position:absolute;top:0;right:0;bottom:0;width:min(86vw,340px);transform:translateX(100%);transition:transform .25s ease;box-shadow:-8px 0 30px rgba(0,0,0,.5);z-index:6}
+  .timer-sidebar.open{transform:translateX(0)}
+  .timer-main{padding:20px 16px}
+}
+@media(max-width:380px){.ring-container{width:200px;height:200px}.ring-time .big{font-size:46px}}
+/* devices without hover (touch): always show drag handle affordance subtly */
+@media(hover:none){.ex-card:hover{border-color:var(--surface3)}}
+</style>
+</head>
+<body>
+<svg style="display:none">
+  <symbol id="i-play" viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></symbol>
+  <symbol id="i-skip" viewBox="0 0 24 24"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></symbol>
+  <symbol id="i-stop" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="2"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></symbol>
+  <symbol id="i-upload" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></symbol>
+  <symbol id="i-dumbbell" viewBox="0 0 24 24"><line x1="2" y1="12" x2="22" y2="12"/><rect x="4" y="8" width="3" height="8" rx="1"/><rect x="17" y="8" width="3" height="8" rx="1"/><rect x="1" y="10" width="2" height="4" rx=".5"/><rect x="21" y="10" width="2" height="4" rx=".5"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+  <symbol id="i-timer" viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2"/><path d="M5 3l2 2"/><path d="M19 3l-2 2"/><line x1="10" y1="1" x2="14" y2="1"/></symbol>
+  <symbol id="i-zap" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></symbol>
+  <symbol id="i-coffee" viewBox="0 0 24 24"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></symbol>
+  <symbol id="i-hourglass" viewBox="0 0 24 24"><path d="M5 22h14"/><path d="M5 2h14"/><path d="M17 22v-4.172a2 2 0 00-.586-1.414L12 12l-4.414 4.414A2 2 0 007 17.828V22"/><path d="M7 2v4.172a2 2 0 00.586 1.414L12 12l4.414-4.414A2 2 0 0017 6.172V2"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+  <symbol id="i-flag" viewBox="0 0 24 24"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></symbol>
+  <symbol id="i-check-circle" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></symbol>
+  <symbol id="i-arrow-right" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></symbol>
+  <symbol id="i-bar-chart" viewBox="0 0 24 24"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></symbol>
+  <symbol id="i-maximize" viewBox="0 0 24 24"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></symbol>
+  <symbol id="i-minimize" viewBox="0 0 24 24"><polyline points="4 14 10 14 10 20"/><polyline points="20 10 14 10 14 4"/><line x1="14" y1="10" x2="21" y2="3"/><line x1="3" y1="21" x2="10" y2="14"/></symbol>
+  <symbol id="i-grip" viewBox="0 0 24 24"><circle cx="9" cy="6" r="1.5" fill="currentColor" stroke="none"/><circle cx="15" cy="6" r="1.5" fill="currentColor" stroke="none"/><circle cx="9" cy="12" r="1.5" fill="currentColor" stroke="none"/><circle cx="15" cy="12" r="1.5" fill="currentColor" stroke="none"/><circle cx="9" cy="18" r="1.5" fill="currentColor" stroke="none"/><circle cx="15" cy="18" r="1.5" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-rotate" viewBox="0 0 24 24"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 102.13-9.36L1 10"/></symbol>
+  <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M6 9H4a2 2 0 01-2-2V5a2 2 0 012-2h2"/><path d="M18 9h2a2 2 0 002-2V5a2 2 0 00-2-2h-2"/><path d="M6 3h12v7a6 6 0 01-12 0V3z"/><path d="M9 21h6"/><path d="M12 16v5"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></symbol>
+  <symbol id="i-chevron-up" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></symbol>
+  <symbol id="i-chevron-down" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></symbol>
+  <symbol id="i-list" viewBox="0 0 24 24"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></symbol>
+</svg>
+
+<div id="setup">
+  <div class="setup-left">
+    <div class="top-bar">
+      <div class="brand"><h1>FORGE</h1></div>
+      <div class="top-actions">
+        <button class="icon-btn" onclick="importJSON()" title="Import workout"><svg class="icon sm"><use href="#i-upload"/></svg> Import</button>
+        <button class="icon-btn" onclick="exportJSON()" title="Export workout"><svg class="icon sm"><use href="#i-download"/></svg> Export</button>
+        <button class="icon-btn" id="fsBtnSetup" title="Toggle fullscreen"><svg class="icon sm"><use href="#i-maximize"/></svg></button>
+      </div>
+    </div>
+    <div class="section-title">Exercises — drag handle to reorder</div>
+    <div class="exercise-list" id="exerciseList"></div>
+    <div class="add-btn" onclick="addExercise()"><svg class="icon sm"><use href="#i-plus"/></svg> Add Exercise</div>
+  </div>
+  <div class="setup-right">
+    <div class="section-title">Workout Summary</div>
+    <div class="summary-block" id="summaryBlock">
+      <div class="summary-row"><span class="sr-label">Total exercises</span><span class="sr-value" id="sumExCount">0</span></div>
+      <div class="summary-row"><span class="sr-label">Total reps</span><span class="sr-value" id="sumReps">0</span></div>
+      <div class="summary-row"><span class="sr-label">Work time</span><span class="sr-value" id="sumWork">00:00</span></div>
+      <div class="summary-row"><span class="sr-label">Break time</span><span class="sr-value" id="sumBreak">00:00</span></div>
+      <div class="summary-row"><span class="sr-label">Total est.</span><span class="sr-value" id="sumTotal">00:00</span></div>
+    </div>
+    <div style="flex:1"></div>
+    <button class="start-btn" onclick="startWorkout()"><svg class="icon"><use href="#i-play"/></svg> START WORKOUT</button>
+  </div>
+</div>
+<input type="file" id="fileInput" accept=".json">
+
+<div id="timer">
+  <div class="timer-bg"><div class="glow g1" id="glow1"></div><div class="glow g2" id="glow2"></div></div>
+  <div class="sidebar-toggle" id="sidebarToggle" title="Toggle stats"><svg class="icon sm"><use href="#i-list"/></svg></div>
+  <div class="timer-top-bar">
+    <div class="ctrl-btn-sm" id="fsBtnTimer" title="Toggle fullscreen"><svg class="icon sm"><use href="#i-maximize"/></svg></div>
+  </div>
+  <div class="timer-main">
+    <div class="phase-label" id="phaseLabel"><svg class="icon"><use href="#i-timer"/></svg> GET READY</div>
+    <div class="current-name" id="currentName">—</div>
+    <div class="ring-container">
+      <svg class="ring-svg" viewBox="0 0 280 280"><circle class="ring-bg" cx="140" cy="140" r="126"/><circle class="ring-fg exercise" id="ringFg" cx="140" cy="140" r="126" stroke-dasharray="791.68" stroke-dashoffset="0"/></svg>
+      <div class="ring-time"><div class="big" id="timeDisplay">00:00</div><div class="sub" id="timeSub"></div></div>
+    </div>
+    <div class="timer-controls">
+      <div class="ctrl-btn" id="pauseBtn" onclick="togglePause()" title="Pause / Resume"><svg class="icon lg"><use href="#i-pause"/></svg></div>
+      <div class="ctrl-btn" onclick="skipPhase()" title="Skip"><svg class="icon lg"><use href="#i-skip"/></svg></div>
+      <div class="ctrl-btn stop" onclick="stopWorkout()" title="Stop"><svg class="icon lg"><use href="#i-stop"/></svg></div>
+    </div>
+  </div>
+  <div class="timer-sidebar">
+    <div class="info-block"><div class="info-label"><svg class="icon sm"><use href="#i-bar-chart"/></svg> Overall Progress</div><div class="progress-bar-track"><div class="progress-bar-fill" id="progressFill"></div></div><div class="info-value" id="progressText">0%</div></div>
+    <div class="info-block"><div class="info-label"><svg class="icon sm"><use href="#i-target"/></svg> Current Set</div><div class="info-value accent" id="setInfo">—</div></div>
+    <div class="info-block"><div class="info-label"><svg class="icon sm"><use href="#i-clock"/></svg> Elapsed</div><div class="info-value" id="elapsedTime">00:00</div></div>
+    <div class="info-block"><div class="info-label"><svg class="icon sm"><use href="#i-timer"/></svg> Remaining</div><div class="info-value cyan" id="remainTime">—</div></div>
+    <div class="info-block"><div class="info-label"><svg class="icon sm"><use href="#i-flag"/></svg> Est. Finish</div><div class="info-value" id="estFinish">—</div></div>
+    <div class="info-block"><div class="info-label"><svg class="icon sm"><use href="#i-arrow-right"/></svg> Next Up</div><div class="info-value" id="nextUp">—</div></div>
+    <div class="section-title" style="margin-top:4px">Queue</div>
+    <div class="upcoming-list" id="upcomingList"></div>
+  </div>
+</div>
+
+<div id="done-overlay">
+  <div class="done-icon"><svg class="icon" style="width:64px;height:64px"><use href="#i-trophy"/></svg></div>
+  <h2>WORKOUT COMPLETE</h2><p id="doneSummary"></p>
+  <button onclick="backToSetup()"><svg class="icon"><use href="#i-rotate"/></svg> NEW WORKOUT</button>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+/* ═══ AUDIO ═══ */
+var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+function beep(f, d, t, v) {
+  t = t || 'sine'; v = v || 0.25;
+  var o = audioCtx.createOscillator(), g = audioCtx.createGain();
+  o.type = t; o.frequency.value = f;
+  g.gain.setValueAtTime(v, audioCtx.currentTime);
+  g.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + d);
+  o.connect(g); g.connect(audioCtx.destination);
+  o.start(); o.stop(audioCtx.currentTime + d);
+}
+function beepTick() { beep(900, 0.1); }
+function beepGo() { beep(1400, 0.15); setTimeout(function() { beep(1800, 0.2); }, 150); }
+function beepBreakStart() { beep(500, 0.3, 'triangle'); }
+function beepBreakWarn() { beep(700, 0.12); }
+function beepExDone() { beep(600, 0.2); setTimeout(function() { beep(800, 0.2); }, 200); }
+function beepAllDone() { [0, 150, 300, 450].forEach(function(d, i) { setTimeout(function() { beep(1200 + i * 200, 0.2); }, d); }); }
+
+/* ═══ TOAST ═══ */
+var toastT;
+function showToast(m, ic) {
+  ic = ic || '#i-check-circle';
+  var t = document.getElementById('toast');
+  t.innerHTML = '<svg class="icon sm"><use href="' + ic + '"/></svg> ' + m;
+  t.classList.add('show');
+  clearTimeout(toastT);
+  toastT = setTimeout(function() { t.classList.remove('show'); }, 2500);
+}
+
+/* ═══ FULLSCREEN ═══ */
+function doToggleFullscreen() {
+  if (!document.fullscreenElement && !document.webkitFullscreenElement) {
+    var el = document.documentElement;
+    if (el.requestFullscreen) el.requestFullscreen();
+    else if (el.webkitRequestFullscreen) el.webkitRequestFullscreen();
+  } else {
+    if (document.exitFullscreen) document.exitFullscreen();
+    else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
+  }
+}
+function updateFsIcons() {
+  var isFs = !!(document.fullscreenElement || document.webkitFullscreenElement);
+  var href = isFs ? '#i-minimize' : '#i-maximize';
+  var icons = document.querySelectorAll('#fsBtnSetup use, #fsBtnTimer use');
+  for (var i = 0; i < icons.length; i++) icons[i].setAttribute('href', href);
+}
+document.addEventListener('fullscreenchange', updateFsIcons);
+document.addEventListener('webkitfullscreenchange', updateFsIcons);
+document.getElementById('fsBtnSetup').addEventListener('click', doToggleFullscreen);
+document.getElementById('fsBtnTimer').addEventListener('click', doToggleFullscreen);
+
+/* ═══ MOBILE SIDEBAR ═══ */
+document.getElementById('sidebarToggle').addEventListener('click', function() {
+  document.querySelector('.timer-sidebar').classList.toggle('open');
+});
+
+/* ═══ PERSISTENCE (IndexedDB) ═══ */
+var DB_NAME = 'forge', DB_STORE = 'workouts', DB_KEY = 'current';
+var dbReady = false, saveT = null, _dbPromise = null;
+
+function openDB() {
+  if (_dbPromise) return _dbPromise;
+  _dbPromise = new Promise(function(resolve, reject) {
+    if (!window.indexedDB) { reject(new Error('no-indexeddb')); return; }
+    var req = indexedDB.open(DB_NAME, 1);
+    req.onupgradeneeded = function() {
+      var db = req.result;
+      if (!db.objectStoreNames.contains(DB_STORE)) db.createObjectStore(DB_STORE);
+    };
+    req.onsuccess = function() { resolve(req.result); };
+    req.onerror = function() { reject(req.error); };
+  });
+  return _dbPromise;
+}
+
+function dbGet(key) {
+  return openDB().then(function(db) {
+    return new Promise(function(resolve, reject) {
+      var tx = db.transaction(DB_STORE, 'readonly');
+      var r = tx.objectStore(DB_STORE).get(key);
+      r.onsuccess = function() { resolve(r.result); };
+      r.onerror = function() { reject(r.error); };
+    });
+  });
+}
+
+function dbPut(key, val) {
+  return openDB().then(function(db) {
+    return new Promise(function(resolve, reject) {
+      var tx = db.transaction(DB_STORE, 'readwrite');
+      tx.objectStore(DB_STORE).put(val, key);
+      tx.oncomplete = function() { resolve(); };
+      tx.onerror = function() { reject(tx.error); };
+    });
+  });
+}
+
+function saveWorkout() {
+  if (!dbReady) return;
+  var data = { version: 2, exercises: getExerciseData(), savedAt: Date.now() };
+  dbPut(DB_KEY, data).catch(function(err) { console.warn('[FORGE] save failed', err); });
+}
+
+// debounced — updateSummary fires on every edit, so this catches all changes
+function scheduleSave() {
+  if (!dbReady) return;
+  clearTimeout(saveT);
+  saveT = setTimeout(saveWorkout, 400);
+}
+
+function loadExercises(exercises) {
+  document.getElementById('exerciseList').innerHTML = '';
+  for (var i = 0; i < exercises.length; i++) {
+    var ex = exercises[i];
+    addExercise(
+      ex.name || '',
+      ex.duration || 30,
+      ex.repeats || 1,
+      (ex.shortBreak !== undefined && ex.shortBreak !== null) ? ex.shortBreak : 15,
+      (ex.longBreak !== undefined && ex.longBreak !== null) ? ex.longBreak : 60
+    );
+  }
+}
+
+function seedDefaults() {
+  addExercise('Push-ups', 30, 3, 15, 60);
+  addExercise('Squats', 40, 3, 20, 45);
+  addExercise('Plank', 45, 2, 10, 60);
+}
+
+function initWorkout() {
+  dbGet(DB_KEY).then(function(saved) {
+    if (saved && Array.isArray(saved.exercises) && saved.exercises.length) {
+      loadExercises(saved.exercises);
+    } else {
+      seedDefaults();
+    }
+  }).catch(function() {
+    seedDefaults();
+  }).then(function() {
+    dbReady = true;   // enable autosave only after initial load
+    updateSummary();
+  });
+}
+
+/* ═══ EXERCISES ═══ */
+function addExercise(name, duration, repeats, shortBrk, longBrk) {
+  name = name || ''; duration = duration || 30; repeats = repeats || 3;
+  shortBrk = (shortBrk !== undefined && shortBrk !== null) ? shortBrk : 15;
+  longBrk = (longBrk !== undefined && longBrk !== null) ? longBrk : 60;
+  var list = document.getElementById('exerciseList');
+  var idx = list.children.length + 1;
+  var div = document.createElement('div');
+  div.className = 'ex-card';
+  div.setAttribute('draggable', 'false');
+  div.innerHTML =
+    '<div class="ex-top">'
+    + '<div class="ex-reorder">'
+    +   '<div class="ex-handle" title="Drag to reorder"><svg class="icon sm"><use href="#i-grip"/></svg></div>'
+    +   '<div class="ex-move-col">'
+    +     '<button class="ex-move ex-up" title="Move up"><svg class="icon sm"><use href="#i-chevron-up"/></svg></button>'
+    +     '<button class="ex-move ex-down" title="Move down"><svg class="icon sm"><use href="#i-chevron-down"/></svg></button>'
+    +   '</div>'
+    + '</div>'
+    + '<div class="ex-num">' + idx + '</div>'
+    + '<div class="ex-fields">'
+    +   '<input type="text" placeholder="Exercise name" value="' + escAttr(name) + '" data-field="name" oninput="updateSummary()">'
+    +   '<div class="mini-group"><label>Sec</label><input type="number" value="' + duration + '" min="1" data-field="duration" onchange="updateSummary()"></div>'
+    +   '<div class="mini-group"><label>Reps</label><input type="number" value="' + repeats + '" min="1" data-field="repeats" onchange="updateSummary()"></div>'
+    + '</div>'
+    + '<button class="ex-remove" title="Remove"><svg class="icon sm"><use href="#i-x"/></svg></button>'
+    + '</div>'
+    + '<div class="ex-breaks">'
+    +   '<div class="break-group"><svg class="icon sm"><use href="#i-coffee"/></svg><label>Short Break</label><input type="number" value="' + shortBrk + '" min="0" data-field="shortBreak" onchange="updateSummary()"><label>s</label></div>'
+    +   '<div class="break-group"><svg class="icon sm"><use href="#i-moon"/></svg><label>Long Break</label><input type="number" value="' + longBrk + '" min="0" data-field="longBreak" onchange="updateSummary()"><label>s</label></div>'
+    + '</div>';
+  list.appendChild(div);
+
+  // remove button
+  div.querySelector('.ex-remove').addEventListener('click', function() {
+    div.remove();
+    renumberCards();
+    updateSummary();
+  });
+
+  // move up / down (touch-friendly reorder)
+  div.querySelector('.ex-up').addEventListener('click', function() {
+    var prev = div.previousElementSibling;
+    if (prev) { div.parentNode.insertBefore(div, prev); renumberCards(); updateSummary(); }
+  });
+  div.querySelector('.ex-down').addEventListener('click', function() {
+    var next = div.nextElementSibling;
+    if (next) { div.parentNode.insertBefore(next, div); renumberCards(); updateSummary(); }
+  });
+
+  // drag from handle
+  initDragForCard(div);
+  renumberCards();
+  updateSummary();
+}
+
+function escAttr(s) { return s.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;'); }
+
+function renumberCards() {
+  var cards = document.querySelectorAll('#exerciseList .ex-card');
+  for (var i = 0; i < cards.length; i++) {
+    cards[i].querySelector('.ex-num').textContent = i + 1;
+    cards[i].querySelector('.ex-up').disabled = (i === 0);
+    cards[i].querySelector('.ex-down').disabled = (i === cards.length - 1);
+  }
+}
+
+/* ═══ DRAG & DROP REORDER ═══ */
+var dragSrcEl = null;
+
+function initDragForCard(card) {
+  var handle = card.querySelector('.ex-handle');
+
+  handle.addEventListener('mousedown', function() {
+    card.setAttribute('draggable', 'true');
+  });
+  handle.addEventListener('touchstart', function() {
+    card.setAttribute('draggable', 'true');
+  }, { passive: true });
+
+  card.addEventListener('dragstart', function(e) {
+    dragSrcEl = card;
+    card.classList.add('dragging');
+    e.dataTransfer.effectAllowed = 'move';
+    e.dataTransfer.setData('text/plain', '');
+  });
+
+  card.addEventListener('dragover', function(e) {
+    e.preventDefault();
+    e.dataTransfer.dropEffect = 'move';
+    if (card === dragSrcEl) return;
+    var rect = card.getBoundingClientRect();
+    var midY = rect.top + rect.height / 2;
+    card.classList.remove('drag-over-top', 'drag-over-bottom');
+    if (e.clientY < midY) {
+      card.classList.add('drag-over-top');
+    } else {
+      card.classList.add('drag-over-bottom');
+    }
+  });
+
+  card.addEventListener('dragleave', function() {
+    card.classList.remove('drag-over-top', 'drag-over-bottom');
+  });
+
+  card.addEventListener('drop', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    card.classList.remove('drag-over-top', 'drag-over-bottom');
+    if (!dragSrcEl || dragSrcEl === card) return;
+    var list = document.getElementById('exerciseList');
+    var rect = card.getBoundingClientRect();
+    var midY = rect.top + rect.height / 2;
+    if (e.clientY < midY) {
+      list.insertBefore(dragSrcEl, card);
+    } else {
+      list.insertBefore(dragSrcEl, card.nextSibling);
+    }
+    renumberCards();
+    updateSummary();
+  });
+
+  card.addEventListener('dragend', function() {
+    card.classList.remove('dragging');
+    card.setAttribute('draggable', 'false');
+    // clean all markers
+    var all = document.querySelectorAll('.ex-card');
+    for (var i = 0; i < all.length; i++) {
+      all[i].classList.remove('drag-over-top', 'drag-over-bottom');
+    }
+    dragSrcEl = null;
+  });
+}
+
+/* ═══ DATA ═══ */
+function getExerciseData() {
+  var r = [];
+  var cards = document.querySelectorAll('#exerciseList .ex-card');
+  for (var i = 0; i < cards.length; i++) {
+    var c = cards[i];
+    r.push({
+      name: c.querySelector('[data-field=name]').value.trim(),
+      duration: parseInt(c.querySelector('[data-field=duration]').value) || 30,
+      repeats: parseInt(c.querySelector('[data-field=repeats]').value) || 1,
+      shortBreak: parseInt(c.querySelector('[data-field=shortBreak]').value) || 0,
+      longBreak: parseInt(c.querySelector('[data-field=longBreak]').value) || 0
+    });
+  }
+  return r;
+}
+
+function updateSummary() {
+  var data = getExerciseData(), totalReps = 0, workSec = 0, breakSec = 0;
+  for (var i = 0; i < data.length; i++) {
+    var ex = data[i];
+    var reps = Math.max(1, ex.repeats);
+    totalReps += reps;
+    workSec += ex.duration * reps;
+    var sB = Math.max(0, ex.shortBreak);
+    if (reps > 1 && sB > 0) breakSec += sB * (reps - 1);
+    if (i > 0) { var lB = Math.max(0, ex.longBreak); if (lB > 0) breakSec += lB; }
+  }
+  var getReadySec = totalReps * 5;
+  var total = workSec + breakSec + getReadySec;
+  document.getElementById('sumExCount').textContent = data.length;
+  document.getElementById('sumReps').textContent = totalReps;
+  document.getElementById('sumWork').textContent = fmtTime(workSec);
+  document.getElementById('sumBreak').textContent = fmtTime(breakSec);
+  document.getElementById('sumTotal').textContent = fmtTime(total);
+  scheduleSave();
+}
+
+/* ═══ IMPORT / EXPORT ═══ */
+function exportJSON() {
+  var data = { version: 2, exercises: getExerciseData() };
+  var blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+  var a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'forge-workout.json';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(a.href);
+  showToast('Workout exported', '#i-download');
+}
+
+function importJSON() {
+  var input = document.getElementById('fileInput');
+  input.value = '';
+  input.onchange = function() {
+    var file = input.files[0];
+    if (!file) return;
+    var reader = new FileReader();
+    reader.onload = function(e) {
+      try {
+        var data = JSON.parse(e.target.result);
+        if (!data.exercises || !Array.isArray(data.exercises)) throw new Error('bad');
+        loadExercises(data.exercises);
+        saveWorkout();   // persist imported workout immediately
+        showToast('Imported ' + data.exercises.length + ' exercises', '#i-upload');
+      } catch (err) {
+        showToast('Invalid JSON file', '#i-x');
+      }
+    };
+    reader.readAsText(file);
+  };
+  input.click();
+}
+
+/* ═══ INIT — restore from IndexedDB or seed defaults ═══ */
+initWorkout();
+
+/* ═══ BUILD QUEUE ═══ */
+function buildQueue() {
+  var exData = getExerciseData(), q = [];
+  for (var xi = 0; xi < exData.length; xi++) {
+    var ex = exData[xi];
+    var nm = ex.name || ('Exercise ' + (xi + 1));
+    var dur = Math.max(1, ex.duration);
+    var reps = Math.max(1, ex.repeats);
+    var sB = Math.max(0, ex.shortBreak);
+    var lB = Math.max(0, ex.longBreak);
+    if (xi > 0 && lB > 0) q.push({ type: 'long', name: 'Long Break', duration: lB, exIndex: xi });
+    for (var r = 0; r < reps; r++) {
+      if (r > 0 && sB > 0) q.push({ type: 'short', name: 'Short Break', duration: sB, exIndex: xi });
+      q.push({ type: 'getready', name: 'Get Ready: ' + nm, duration: 5, exIndex: xi, rep: r, totalReps: reps });
+      q.push({ type: 'exercise', name: nm, duration: dur, exIndex: xi, rep: r, totalReps: reps });
+    }
+  }
+  return q;
+}
+
+/* ═══ TIMER STATE ═══ */
+var queue = [], qIdx = 0, secLeft = 0, totalSec = 0, isPaused = false, intervalId = null, startedAt = 0, pausedAccum = 0, pauseStart = 0;
+
+function startWorkout() {
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+  queue = buildQueue();
+  if (!queue.length) { showToast('Add at least one exercise', '#i-x'); return; }
+  totalSec = 0;
+  for (var i = 0; i < queue.length; i++) totalSec += queue[i].duration;
+  qIdx = 0; isPaused = false; pausedAccum = 0; startedAt = Date.now();
+  document.getElementById('setup').classList.add('hidden');
+  document.getElementById('timer').classList.add('active');
+  loadPhase();
+  intervalId = setInterval(tick, 1000);
+}
+
+function loadPhase() {
+  if (qIdx >= queue.length) { finish(); return; }
+  var p = queue[qIdx];
+  secLeft = p.duration;
+  if (p.type === 'getready') beepTick();
+  else if (p.type === 'short' || p.type === 'long') beepBreakStart();
+  updateDisplay();
+}
+
+function tick() {
+  if (isPaused) return;
+  secLeft--;
+  var p = queue[qIdx];
+  if (p.type === 'getready' && secLeft > 0 && secLeft <= 4) beepTick();
+  if (p.type === 'getready' && secLeft === 0) beepGo();
+  if (p.type === 'exercise' && secLeft === 0) beepExDone();
+  if ((p.type === 'short' || p.type === 'long') && secLeft > 0 && secLeft <= 3) beepBreakWarn();
+  if (secLeft <= 0) { qIdx++; loadPhase(); return; }
+  updateDisplay();
+}
+
+var phaseIcons = { getready: '#i-hourglass', exercise: '#i-zap', short: '#i-coffee', long: '#i-moon' };
+var phaseNames2 = { getready: 'GET READY', exercise: 'EXERCISE', short: 'SHORT BREAK', long: 'LONG BREAK' };
+var phaseClasses = { getready: 'getready', exercise: 'exercise', short: 'rest', long: 'rest' };
+var queueIcons = { exercise: '#i-dumbbell', getready: '#i-hourglass', short: '#i-coffee', long: '#i-moon' };
+
+function updateDisplay() {
+  var p = queue[qIdx]; if (!p) return;
+  var pl = document.getElementById('phaseLabel');
+  pl.innerHTML = '<svg class="icon"><use href="' + phaseIcons[p.type] + '"/></svg> ' + phaseNames2[p.type];
+  pl.className = 'phase-label ' + phaseClasses[p.type];
+  document.getElementById('currentName').textContent = p.name;
+
+  var pct = p.duration > 0 ? secLeft / p.duration : 0;
+  var ring = document.getElementById('ringFg');
+  ring.setAttribute('stroke-dashoffset', 791.68 * (1 - pct));
+  ring.className.baseVal = 'ring-fg ' + phaseClasses[p.type];
+
+  document.getElementById('timeDisplay').textContent = fmtTime(secLeft);
+  document.getElementById('timeSub').textContent = (p.type === 'exercise' && p.totalReps) ? ('Rep ' + (p.rep + 1) + ' / ' + p.totalReps) : '';
+
+  var g1 = document.getElementById('glow1'), g2 = document.getElementById('glow2');
+  if (p.type === 'exercise') { g1.style.background = 'var(--accent)'; g2.style.background = 'var(--cyan)'; }
+  else if (p.type === 'getready') { g1.style.background = 'var(--red)'; g2.style.background = 'var(--red)'; }
+  else { g1.style.background = 'var(--cyan)'; g2.style.background = 'var(--accent)'; }
+
+  var now = isPaused ? pauseStart : Date.now();
+  var elapsed = Math.floor((now - startedAt - pausedAccum) / 1000);
+  document.getElementById('elapsedTime').textContent = fmtTime(Math.max(0, elapsed));
+
+  var doneSec = 0;
+  for (var i = 0; i < qIdx; i++) doneSec += queue[i].duration;
+  doneSec += (p.duration - secLeft);
+  var pctDone = totalSec > 0 ? Math.round(doneSec / totalSec * 100) : 0;
+  document.getElementById('progressFill').style.width = pctDone + '%';
+  document.getElementById('progressText').textContent = pctDone + '%';
+
+  var remSec = 0;
+  for (var j = qIdx; j < queue.length; j++) remSec += queue[j].duration;
+  remSec -= (p.duration - secLeft);
+  document.getElementById('remainTime').textContent = fmtTime(Math.max(0, remSec));
+  document.getElementById('estFinish').textContent = new Date(Date.now() + Math.max(0, remSec) * 1000).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+  if (p.type === 'exercise' || p.type === 'getready')
+    document.getElementById('setInfo').textContent = 'Exercise ' + (p.exIndex + 1) + ' \u2014 Rep ' + ((p.rep || 0) + 1) + '/' + p.totalReps;
+  else
+    document.getElementById('setInfo').textContent = p.name;
+
+  var next = queue[qIdx + 1];
+  document.getElementById('nextUp').textContent = next ? next.name : 'Done!';
+  renderUpcoming();
+}
+
+function renderUpcoming() {
+  var ul = document.getElementById('upcomingList');
+  ul.innerHTML = '';
+  var end = Math.min(queue.length, qIdx + 12);
+  for (var i = qIdx; i < end; i++) {
+    var q = queue[i];
+    var d = document.createElement('div');
+    d.className = 'upcoming-item' + (i === qIdx ? ' current' : '');
+    d.innerHTML = '<div class="ui-icon"><svg class="icon sm"><use href="' + queueIcons[q.type] + '"/></svg></div><div class="ui-name">' + q.name + '</div><div class="ui-meta">' + q.duration + 's</div>';
+    ul.appendChild(d);
+  }
+}
+
+function fmtTime(s) {
+  var m = Math.floor(s / 60);
+  var sec = s % 60;
+  return (m < 10 ? '0' : '') + m + ':' + (sec < 10 ? '0' : '') + sec;
+}
+
+function togglePause() {
+  isPaused = !isPaused;
+  var btn = document.getElementById('pauseBtn');
+  if (isPaused) {
+    btn.innerHTML = '<svg class="icon lg"><use href="#i-play"/></svg>';
+    pauseStart = Date.now();
+  } else {
+    btn.innerHTML = '<svg class="icon lg"><use href="#i-pause"/></svg>';
+    pausedAccum += Date.now() - pauseStart;
+  }
+}
+
+function skipPhase() { secLeft = 0; qIdx++; loadPhase(); }
+
+function stopWorkout() {
+  clearInterval(intervalId);
+  document.getElementById('timer').classList.remove('active');
+  document.getElementById('setup').classList.remove('hidden');
+}
+
+function finish() {
+  clearInterval(intervalId);
+  beepAllDone();
+  var elapsed = Math.floor((Date.now() - startedAt - pausedAccum) / 1000);
+  document.getElementById('timer').classList.remove('active');
+  document.getElementById('done-overlay').classList.add('active');
+  document.getElementById('doneSummary').textContent = 'Total time: ' + fmtTime(elapsed);
+}
+
+function backToSetup() {
+  document.getElementById('done-overlay').classList.remove('active');
+  document.getElementById('setup').classList.remove('hidden');
+}
+</script>
+</body>
+</html>
